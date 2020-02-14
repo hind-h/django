@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li> <a href="{% url 'myapp:other' %}">Other Page</a> </li>
+            <li> <a href="{% url 'index' %}">Index Page</a> </li>
+            <li> <a href="{% url 'admin:index' %}">Admin Page</a> </li>
+        </ul>
+    </div>
+
+    <div>
+        {% block body_block %}
+            <!-- Anything outside of this will be inherited if you extend!!! -->
+        {% endblock %}
+    </div>
+</body>
+</html>

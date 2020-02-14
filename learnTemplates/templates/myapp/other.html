@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends "myapp/base.html" %}
+{% load extras %}
+    {% block body_block %}
+        <h1> Welcome to Other!!!! </h1>
+        <h2>{{ text|cut1:'Hello' }}</h2>
+    {% endblock %}
